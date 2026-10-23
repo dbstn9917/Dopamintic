@@ -69,6 +69,10 @@ body {
   color: white;
   padding-top: 1em;
   padding-bottom: 1em;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 5;
 }
 .main-nav ul {
   margin: 0;
