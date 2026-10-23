@@ -1,0 +1,30 @@
+// Breakpoint
+
+$xs: 0px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
+// Container
+
+@mixin container-max-width($break-point-size) {
+  @media screen and (min-width: $break-point-size) {
+    max-width: $break-point-size;
+  }
+}
+
+.container {
+  width: 100%;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include container-max-width($sm);
+  @include container-max-width($md);
+  @include container-max-width($lg);
+  @include container-max-width($xl);
+  @include container-max-width($xxl);
+}

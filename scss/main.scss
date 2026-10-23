@@ -1,3 +1,25 @@
+@use "utility";
+@use "layout";
+
 body {
   font-family: "Pretendard Variable";
+}
+
+.main-nav {
+  background-color: rgb(25 25 25);
+  color: white;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  box-shadow: 0 1px 4px rgb(0 0 0 / 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .dopamintic-logo {
+    font-size: 26px;
+  }
 }
