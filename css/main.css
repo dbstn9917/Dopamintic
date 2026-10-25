@@ -27,6 +27,11 @@
   margin: 0;
 }
 
+.container-my {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
 .container {
   width: 100%;
   padding-left: 0.75em;
@@ -97,4 +102,10 @@ body {
   text-align: center;
   margin: 0;
   padding-top: 14px;
+}
+
+.hero-title {
+  text-wrap: balance;
+  word-break: keep-all;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
