@@ -1,0 +1,21 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+
+  viewBox="0 0 1400 1000"
+>
+  <path
+    d="M0 500 
+    L750 500
+    l25 -25
+    l25 75
+    l50 -275
+    l75 350
+    l25 -150
+    l15 25
+    L1400 500
+    "
+    stroke="red"
+    stroke-width="10"
+    fill="none"
+  />
+</svg>
