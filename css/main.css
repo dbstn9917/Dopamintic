@@ -27,11 +27,6 @@
   margin: 0;
 }
 
-.container-my {
-  margin-top: 80px;
-  margin-bottom: 80px;
-}
-
 .container {
   width: 100%;
   padding-left: 0.75em;
@@ -104,8 +99,38 @@ body {
   padding-top: 14px;
 }
 
-.hero-title {
+.hero-container {
+  background-color: black;
+  display: flex;
+  position: relative;
+  z-index: -2;
+}
+.hero-container .hero-title {
   text-wrap: balance;
   word-break: keep-all;
   text-align: center;
+  color: white;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  font-size: 60px;
+}
+.hero-container .hero-title h1 {
+  font-size: 1em;
+  font-weight: 700;
+}
+.hero-container .hero-title p {
+  font-size: 20px;
+  font-weight: 600;
+}
+.hero-container .pulse {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  z-index: -1;
+  max-width: 992px;
+  transform: translate(-50%, -47.5%);
+  -webkit-mask-image: radial-gradient(circle, black 30%, transparent 70%);
+          mask-image: radial-gradient(circle, black 30%, transparent 70%);
+  color: rgba(255, 141, 141, 0.486);
 }/*# sourceMappingURL=main.css.map */
