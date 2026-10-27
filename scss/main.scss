@@ -44,6 +44,14 @@ body {
   display: flex;
   position: relative;
   z-index: -2;
+
+  font-size: 72px;
+  @media screen and (max-width: layout.$xl) {
+    font-size: 48px;
+  }
+  @media screen and (max-width: layout.$sm) {
+    font-size: 32px;
+  }
   .hero-title {
     text-wrap: balance;
     word-break: keep-all;
@@ -53,25 +61,29 @@ body {
     margin-top: 3em;
     margin-bottom: 3em;
 
-    font-size: 60px;
     h1 {
       font-size: 1em;
       font-weight: 700;
     }
     p {
-      font-size: 20px;
+      font-size: 24px;
       font-weight: 600;
+      @media screen and (max-width: layout.$xl) {
+        font-size: 20px;
+      }
+      @media screen and (max-width: layout.$sm) {
+        font-size: 16px;
+      }
     }
   }
   .pulse {
     position: absolute;
     top: 50%;
     left: 50%;
+    max-width: 10em;
     width: 100%;
     z-index: -1;
-    max-width: layout.$lg;
     transform: translate(-50%, -47.5%);
     mask-image: radial-gradient(circle, black 30%, transparent 70%);
-    color: rgba(255, 141, 141, 0.486);
   }
 }
