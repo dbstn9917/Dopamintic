@@ -85,5 +85,25 @@ body {
     z-index: -1;
     transform: translate(-50%, -47.5%);
     mask-image: radial-gradient(circle, black 30%, transparent 70%);
+
+    stroke-dasharray: 2316;
+    stroke-dashoffset: 2316;
+
+    animation: pulse 1s ease 1s forwards;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    stroke-dashoffset: 2316;
+    opacity: 100%;
+  }
+
+  75% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 50%;
   }
 }
