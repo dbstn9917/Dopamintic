@@ -38,3 +38,72 @@ body {
     padding-top: 14px;
   }
 }
+
+.hero-container {
+  background-color: black;
+  display: flex;
+  position: relative;
+  z-index: -2;
+
+  font-size: 72px;
+  @media screen and (max-width: layout.$xl) {
+    font-size: 48px;
+  }
+  @media screen and (max-width: layout.$sm) {
+    font-size: 32px;
+  }
+  .hero-title {
+    text-wrap: balance;
+    word-break: keep-all;
+    text-align: center;
+    color: white;
+
+    margin-top: 3em;
+    margin-bottom: 3em;
+
+    h1 {
+      font-size: 1em;
+      font-weight: 700;
+    }
+    p {
+      font-size: 24px;
+      font-weight: 600;
+      @media screen and (max-width: layout.$xl) {
+        font-size: 20px;
+      }
+      @media screen and (max-width: layout.$sm) {
+        font-size: 16px;
+      }
+    }
+  }
+  .pulse {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 10em;
+    width: 100%;
+    z-index: -1;
+    transform: translate(-50%, -47.5%);
+    mask-image: radial-gradient(circle, black 30%, transparent 70%);
+
+    stroke-dasharray: 2316;
+    stroke-dashoffset: 2316;
+
+    animation: pulse 1s ease 1s forwards;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    stroke-dashoffset: 2316;
+    opacity: 100%;
+  }
+
+  75% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 50%;
+  }
+}
